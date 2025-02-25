@@ -1,0 +1,14 @@
+.categoryList {
+  display: flex;
+  margin: 6px;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--color-bg-sub);
+  padding: 4px 12px;
+  border-radius: var(--border-radius);
+  white-space: nowrap;
+  font-size: 1rem;
+  margin: 0 6px;
+}

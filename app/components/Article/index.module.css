@@ -1,0 +1,33 @@
+.title {
+  line-height: 4rem;
+}
+
+.description {
+  text-indent: 0.8rem;
+  margin: 1rem 0;
+}
+
+.content h2 {
+  margin: 5rem 0;
+}
+
+.content p {
+  margin: 3rem 0;
+  text-indent: 0.8rem;
+}
+
+.content ul {
+  text-indent: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+}
