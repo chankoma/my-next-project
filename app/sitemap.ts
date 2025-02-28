@@ -28,6 +28,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
     },
     ...newsUrls,
-    ...categoryUrls,
   ];
 }
