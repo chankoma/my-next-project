@@ -7,7 +7,7 @@ const buildUrl = (path?: string) =>
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const newsContents = await getAllNewsList();
 
-  const newsUrls: MetadataRoute.Sitemap = newsContents.map((content: News) => ({
+  const newsUrls: MetadataRoute.Sitemap = newsContents.map((content) => ({
     url: buildUrl(`/news/${content.id}`),
     lastModified: content.revisedAt,
   }));
