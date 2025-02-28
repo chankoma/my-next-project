@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+https://chankoma-next-blog.vercel.app/sitemap.xml
