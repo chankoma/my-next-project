@@ -8,7 +8,6 @@ import Hero from "./components/Hero";
 import Sheet from "./components/Sheet";
 
 export const revalidate = 60;
-
 export default async function Home() {
   const data = await getNewsList({
     limit: TOP_NEWS_LIST,

@@ -43,6 +43,8 @@ export type News = {
   content: string;
   thumbnail?: MicroCMSImage;
   category: Category;
+  id?: string;
+  revisedAt?: string;
 } & MicroCMSListContent;
 
 export const getNewsList = async (queries?: MicroCMSQueries) => {
@@ -74,6 +76,20 @@ export const getCategory = async (queries?: MicroCMSQueries) => {
   const categoryData = await client.getList<Category>({
     endpoint: "categories",
     queries,
+  });
+  return categoryData;
+};
+
+export const getAllNewsList = async () => {
+  const listData = await client.getList<News>({
+    endpoint: "news",
+  });
+  return listData;
+};
+
+export const getAllCategoryList = async () => {
+  const categoryData = await client.getList<Category>({
+    endpoint: "categories",
   });
   return categoryData;
 };

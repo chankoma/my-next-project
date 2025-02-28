@@ -1,6 +1,7 @@
 import Article from "@/app/components/Article";
 import { getNewsDetail } from "@/app/libs/microcms";
 import ButtonLink from "@/app/components/ButtonLink";
+import { Metadata } from "next";
 
 type Props = {
   params: {
@@ -9,6 +10,20 @@ type Props = {
     id?: string;
   };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const data = await getNewsDetail(params.slug);
+
+  return {
+    title: data.title,
+    description: data.description,
+    openGraph: {
+      title: data.title,
+      description: data.description,
+      images: [data?.thumbnail?.url ?? ""],
+    },
+  };
+}
 
 export default async function Page({ params }: Props) {
   const data = await getNewsDetail(params.slug);
