@@ -5,7 +5,7 @@ const buildUrl = (path?: string) =>
   `https://chankoma-next-blog.vercel.app${path ?? ""}`;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const newsContents: any = await getAllNewsList();
+  const newsContents = await getAllNewsList();
 
   const newsUrls: MetadataRoute.Sitemap = newsContents.map((content: News) => ({
     url: buildUrl(`/news/${content.id}`),
