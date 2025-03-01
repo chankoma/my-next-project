@@ -7,6 +7,12 @@
   right: 24px;
 }
 
+.icon {
+  height: auto;
+  width: auto;
+  margin-right: 2px;
+}
+
 .button {
   display: none;
 }
