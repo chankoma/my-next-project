@@ -39,7 +39,13 @@
 }
 
 @media (max-width: 640px) {
+  .list {
+    flex-direction: column;
+    margin: 10px;
+    gap: 20px;
+  }
+
   .image {
-    display: none;
+    width: 100%;
   }
 }
