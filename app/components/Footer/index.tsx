@@ -1,3 +1,4 @@
+import { FaGlasses } from "react-icons/fa6";
 import styles from "./index.module.css";
 
 export default function Footer() {
@@ -16,7 +17,8 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <p className={styles.cr}>@chankoma</p>
+      <span>@chankoma</span>
+      <FaGlasses className={styles.cr} />
     </footer>
   );
 }

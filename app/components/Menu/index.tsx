@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import styles from "./index.module.css";
-import Image from "next/image";
 import { useState } from "react";
-import { FaNewspaper, FaRegFaceGrin } from "react-icons/fa6";
+import { FaBars, FaNewspaper, FaRegFaceGrin } from "react-icons/fa6";
 import { FaRegComment } from "react-icons/fa6";
 
 export default function Menu() {
@@ -39,7 +38,7 @@ export default function Menu() {
         </button>
       </nav>
       <button className={isOpen ? styles.nav : styles.button} onClick={open}>
-        <Image src="/menu.png" alt="menu" width={48} height={48} />
+        <FaBars className={styles.bar} />
       </button>
     </div>
   );

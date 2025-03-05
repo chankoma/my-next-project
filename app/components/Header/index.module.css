@@ -9,23 +9,14 @@
 
 .logoLink {
   display: flex;
-  background-color: #fff;
-  padding: 2px 8px 2px 5px;
-  border-radius: 8px;
-  align-items: center;
-  height: auto;
-  width: auto;
-  font-weight: bold;
 }
 
-.logo- {
+.logo {
   height: auto;
   width: auto;
   font-weight: bold;
   color: #fff;
   padding: 0 5px;
-  -border-radius: var(--border-radius);
-  -background-color: #fff;
 }
 
 .items {

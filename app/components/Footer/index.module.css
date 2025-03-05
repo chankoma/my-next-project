@@ -18,6 +18,10 @@
   white-space: nowrap;
 }
 
+.cr {
+  margin-left: 4px;
+}
+
 @media (max-width: 640px) {
   .items {
     -flex-wrap: wrap;

@@ -34,6 +34,8 @@
 @media (max-width: 640px) {
   .link {
     padding: 16px 0;
+    flex-direction: column;
+    gap: 10px;
   }
   .image {
     width: 150px;
@@ -42,5 +44,9 @@
 
   .title {
     font-size: 1rem;
+  }
+  .meta {
+    flex-direction: row;
+    align-items: center;
   }
 }

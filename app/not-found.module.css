@@ -20,3 +20,17 @@
   padding: 160px 80px;
   border-radius: var(--border-radius);
 }
+
+@media (max-width: 960px) {
+  .container {
+    padding: 160px 40px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 160px 30px;
+    width: 85%;
+  }
+}
