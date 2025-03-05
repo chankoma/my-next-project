@@ -9,7 +9,7 @@ type Props = {
 export default function CategoryList({ category }: Props) {
   return (
     <div className={styles.categoryList}>
-      <h3>category</h3>
+      <h4>category</h4>
       {category.map((n) => (
         <Link
           key={n.id}

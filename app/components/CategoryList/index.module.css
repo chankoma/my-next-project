@@ -1,7 +1,7 @@
 .categoryList {
   display: flex;
-  margin: 6px;
-  gap: 8px;
+  margin: 6px 0;
+  gap: 5px;
 }
 
 .tag {
