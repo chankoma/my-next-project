@@ -51,6 +51,10 @@
     gap: 10px;
   }
 
+  .image {
+    width: 100%;
+  }
+
   .meta {
     flex-direction: row;
     align-items: center;
